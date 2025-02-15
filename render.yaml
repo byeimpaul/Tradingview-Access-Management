@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: Tradingview-Access-Management
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn server:app"
